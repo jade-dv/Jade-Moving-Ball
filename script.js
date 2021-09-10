@@ -42,6 +42,13 @@ class Ball{
     fill(this.color);
     ellipse(this.)
   }
+
+  var ball1, ball2, ball3;
+
+  function setup(){
+
+    ball1 = new Ball(275, )
+  }
 }
 
 
