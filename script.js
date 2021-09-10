@@ -10,7 +10,7 @@ function setup(){
   }
 
   function draw(){
-    background(225);
+    background(0);
     
     ellipse(x, y, 50, 50)
     x = x + vx;
@@ -25,6 +25,27 @@ function setup(){
       vy = vy *-1;
     }
   }
+
+class Ball{
+
+  constructor(x, y, w, h, vx, vy, _color){
+    this.x=x;
+    this.y=y;
+    this.width=w;
+    this.height=h;
+    this.vx=vx;
+    this.vy=vy;
+    this.color=_color;
+  }
+
+  draw(){
+    fill(this.color);
+    ellipse(this.)
+  }
+}
+
+
+
 
 
  
