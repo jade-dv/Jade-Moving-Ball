@@ -1,31 +1,3 @@
-var x, y, vx, vy;
-
-function setup(){
-  createCanvas(500, 400);
-
-  x=0;
-  y=200;
-  vx=5;
-  vy=2;
-  }
-
-  function draw(){
-    background(0);
-    
-    ellipse(x, y, 50, 50)
-    x = x + vx;
-    y = y + vy;
-    
-    
-    if(x <= 0 || x > 500){
-      vx = vx *-1;
-    }
-
-    if(y <= 0 || y > 400){
-      vy = vy *-1;
-    }
-  }
-
 class Ball{
 
   constructor(x, y, w, h, vx, vy, _color){
@@ -40,7 +12,14 @@ class Ball{
 
   draw(){
     fill(this.color);
-    ellipse(this.)
+    ellipse(this.x, this.y, this.width, this.height){
+      this.width= 50;
+      this.height= 50;
+      this.x= this.x + this.vx;
+      this.y= this.y + this.vy; 
+
+    }
+    
   }
 
   var ball1, ball2, ball3;
@@ -48,6 +27,7 @@ class Ball{
   function setup(){
 
     ball1 = new Ball(275, )
+    ball2 = new Ball()
   }
 }
 
