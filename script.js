@@ -10,15 +10,22 @@ class Ball{
     this.color=_color;
   }
 
-  draw(){
+  drawBall(){
     fill(this.color);
     ellipse(this.x, this.y, this.width, this.height){
-      this.width= 50;
-      this.height= 50;
       this.x= this.x + this.vx;
       this.y= this.y + this.vy; 
 
+      if(this.x <= 0|| this. >=400){
+        this.vx = this.vx * -1;
+      }
+
     }
+     
+      if(this.y <= 0 || this.x >= 300){
+        this.vy = this.vy * -1;
+
+      }
     
   }
 
@@ -26,7 +33,7 @@ class Ball{
 
   function setup(){
 
-    ball1 = new Ball(275, )
+    ball1 = new Ball(275,  )
     ball2 = new Ball()
   }
 }
